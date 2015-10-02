@@ -110,7 +110,7 @@ app.directive('newsInfoCard', function() {
     scope: {
       article: '='
     },
-    template: "<div class='cliente'>"+
+    template: "<div class='tile'>"+
               "<a href='{{article.link}}' class='top'>"+
               "<div class='imagetop'>"+
               "<img ng-src='{{article.image}}' err-src='{{ article.author_picture }}'>"+
@@ -140,20 +140,5 @@ app.directive('errSrc', function() {
   }
 });  
   
-  /*
-  angular.module('myApp.services', [])
-  .factory('githubService', ['$http', function($http) {
-
-    var doRequest = function(username, path) {
-      return $http({
-        method: 'JSONP',
-        url: 'https://api.github.com/users/' + username + '/' + path + '?callback=JSON_CALLBACK'
-      });
-    }
-    return {
-      events: function(username) { return doRequest(username, 'events'); },
-    };
-  }]);
-  */
   
 }());
