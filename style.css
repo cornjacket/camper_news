@@ -1,0 +1,174 @@
+a:link { text-decoration: none}
+a:visited { text-decoration: none}
+a, a:hover { text-decoration: none;
+             color:black;}
+a:active { text-decoration: none}
+
+h1, h2 {
+  color: SlateGray;
+}
+
+* {
+  background-color: black;
+}
+
+.tile {
+-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
+
+
+.tile p {
+  background-color: #DCDCDC;
+  margin: 0;
+  /*padding-bottom: 5px; *//* somehow this fixed my prob with text scrolling to the next column*/ 
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+
+}
+
+.bottom {
+  /*display: block;*/
+  margin-bottom: 10px;
+  background-color: #DCDCDC;
+  font-size: .9em;
+  overflow: auto;
+  zoom: 1;
+
+}
+
+
+
+.bot_l {
+  float: left;
+  background-color: #DCDCDC;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+}
+
+.bot_r {
+  
+  padding-bottom: 5px;
+  float: right;
+  background-color: #DCDCDC;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+}
+
+.columns {
+    
+  
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px;
+}
+
+.imagetop {
+    height:190px;
+    background-color:#FFFFFF;
+    margin-top:0px;
+    overflow: hidden;
+}
+
+.imagetop img {
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+
+}
+
+@media (min-width: 400px) {
+  .columns {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
+}
+
+@media (min-width: 593px) {
+  .columns {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+  }
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  
+  .columns { 
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+  }
+  
+}
+
+
+@media (min-width: 992px) {
+  .columns {
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+  }
+}
+
+
+@media (min-width: 1199px) {
+  .columns {
+    -webkit-column-count: 6; /* Chrome, Safari, Opera */
+    -moz-column-count: 6; /* Firefox */
+    column-count: 6;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+}
+
